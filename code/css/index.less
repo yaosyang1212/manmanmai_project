@@ -1,0 +1,91 @@
+body {
+    background-color: #f5f5f5;
+}
+
+
+// 菜单 B
+#menu {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 10px;
+    .row {
+        div {
+            margin-top: 10px;
+            a {
+                display: block;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        div:nth-last-child(-n+4) {
+            display: none;
+        }
+    }
+}
+
+// 菜单 E
+// 推荐 B
+#recommend {
+  
+    .recommend_product {
+        border-bottom: 1px solid #ccc;
+        .media {
+            // border-bottom:1px solid #ccc;
+            padding-bottom: 10px;
+            padding: 10px;
+            .media-left {
+                a {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+            .media-body {
+                .media-heading {
+                    min-height: 56px;
+                    line-height: 22px;
+                    font-size: 16px; // 超出内容隐藏
+                    overflow: hidden; //超出的内容显示冒号
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical; // 超出几行显示
+                    -webkit-line-clamp: 3;
+                    span {
+                        color: red;
+                    }
+                }
+                .other {
+                    color: #a1a1a1;
+                    font-size: 12px;
+                    .other_shop {}
+                    .other_talk {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+    .recommend_more {
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        background-color: #f4f4f4;
+        text-align: center;
+        border: 1px solid #ddd;
+        a {
+            display: block;
+        }
+    }
+}
+
+// 推荐 E
+
+
+

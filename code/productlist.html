@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <!--bootstrap 样式-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!--公共样式-->
+    <link rel="stylesheet" href="css/base.css">
+    <!--index 样式-->
+    <link rel="stylesheet" href="css/productlist.css">
+    <!--引入less.js-->
+    <script src="lib/less/less.js"></script>
+
+</head>
+
+<body>
+    <!--头部 B-->
+    <header id="header">
+        <!--logo-->
+        <a href="#" class="logo">
+             <img src="images/header_logo.png" alt="">
+         </a>
+        <!--app-->
+        <a href="#" class="app">
+             <img src="images/header_app.png" alt="">
+         </a>
+    </header>
+    <!--头部 E-->
+    <!--搜索 B-->
+    <section id="search">
+        <!--form 表单的原因：1、语义 2、定位-->
+        <form action="#">
+            <input type="search" placeholder="MACbook">
+            <input type="submit" value="search">
+        </form>
+    </section>
+    <!--搜索 B-->
+    <!--nav B-->
+
+    <nav id="nav">
+        <span><a href="./index.html">首页</a></span>
+        <span><a href="./category.html">全部分类</a></span>
+        <span class="product_name"><a href="#"></a></span>
+        <a href="#">筛选</a>
+    </nav>
+    <!--nav E-->
+
+    <!--productlist B-->
+    <section id="productlist">
+        <!--商品信息 B-->
+        <!--<ul>
+            <li class="clearfix">
+                <a href="#"></a>
+                <div class="pic">
+                    <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="">
+                </div>
+                <div class="text">
+                    <h5>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h5>
+                    <p class="price">￥1999.00</p>
+                    <div class="other">
+                        <span>报价(6)</span>
+                        <span>评论2666</span>
+                    </div>
+                </div>
+            </li>
+        </ul>-->
+        <!--商品信息 E-->
+        <!--分页 B-->
+        <!--<div class="page">
+            <span class="previous"><a href="#">上一页</a></span>
+            <span>
+                 <select name="" id="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                </select>
+             </span>
+            <span class="next"><a href="#">下一页</a></span>
+        </div>-->
+
+        <!--分页 E-->
+
+    </section>
+
+    <!--productlist E-->
+
+
+
+    <!--product-list B-->
+    <!--<section id="product_list">
+        <ul>
+            <li>
+                <a href="#"></a>
+                <div class="pic">
+                    <img src="http://pro.zuyushop.com:8015/ProPic/20159/Thumb/Thumb_2015090009064857056.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h5>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h5>
+                    <p class="price">￥1999</p>
+                    <div class="other">
+                        <span>报价</span>
+                        <span>评论2666</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="page">
+            <span class="previous"><a href="#">上一页</a></span>
+            <span>
+            <select name="" id="select">
+
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            </span>
+            <span class="next"><a href="#">下一页</a></span>
+        </div>
+    </section>-->
+
+    <section id="product_list">
+      <ul>
+          <li>
+              <a href="#"></a>
+              <div class="pic">
+                  <img src="http://pro.zuyushop.com:8015/ProPic/20159/Thumb/Thumb_2015090009064857056.jpg" alt="">
+              </div>
+              <div class="text">
+                  <h5>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h5>
+                  <div class="price">￥1999</div>
+                  <div class="other">
+                        <span>报价</span>
+                        <span>评论2666</span>
+                  </div>
+              </div>
+          </li>
+      </ul>
+      <div class="page">
+          <span class="previous"><a href="#">上一页</a></span>
+          <span>
+              <select name="" id="select">
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+              </select>
+          </span>
+          <span class="next"><a href="#">下一页</a></span>
+      </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <!--product-list E-->
+
+    <!--prosuct_listTpl B-->
+    <script type="text/html" id="prosuct_listTpl">
+        {{each result as value index}}
+             <li>
+                <a href="#"></a>
+                <div class="pic">
+                    {{#value.productImg}}
+                </div>
+                <div class="text">
+                    <h5>{{value.productName}}</h5>
+                    <p class="price">{{value.productPrice}}</p>
+                    <div class="other">
+                        <span>{{value.productQuote}}</span>
+                        <span>{{value.productCom}}</span></span>
+                    </div>
+                </div>
+            </li>
+        {{/each}}
+
+
+
+
+
+    </script>
+
+
+
+
+
+    <!--prosuct_listTpl E-->
+
+
+
+    <!--底部 B-->
+    <footer id="footer">
+        <!--公共样式-->
+        <div class="recommend_title">
+            <span>更多优惠信息</span>
+            <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+        </div>
+        <!--登录B-->
+        <div class="login_box">
+            <div class="login">
+                <a href="#">登录</a>
+            </div>
+            <div class="resgiter">
+                <a href="#">注册</a>
+            </div>
+            <div class="goTop">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+                <a href="#">返回顶部</a>
+            </div>
+        </div>
+        <!--登录E-->
+        <!--信息B-->
+        <div class="info">
+            <span>手机APP下载</span>
+            <span>手机APP下载</span>
+            <span>手机APP下载</span>
+        </div>
+        <!--信息E-->
+
+    </footer>
+    <!--底部 E-->
+    <!--productlistTpl B-->
+    <script type="text/html" id="productlistTpl">
+        {{each result as value index}}
+        <li>
+            <a href="#"></a>
+            <div class="pic">
+                {{#value.productImg}}
+            </div>
+            <div class="text">
+                <h5>{{value.productName}}</h5>
+                <P class="price">{{value.productPrice}}</P>
+                <div class="other">
+                    <span>{{value.productQuote}}</span>
+                    <span>{{value.productCom}}</span>
+                </div>
+            </div>
+        </li>
+
+        {{/each}}
+    </script>
+
+
+
+
+
+
+
+
+    <!--productlistTpl E-->
+
+
+
+    <!--引入jQuery-->
+    <script src="lib/jquery/jquery.js"></script>
+    <!--引入bootstrap-->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!--url.js-->
+    <script src="js/url.js"></script>
+    <!--template-->
+    <script src="js/template.js"></script>
+    <!--引入自己的js-->
+    <script src="js/productlist.js"></script>
+</body>
+
+</html>

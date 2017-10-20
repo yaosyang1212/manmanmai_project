@@ -1,0 +1,28 @@
+#categroy_title .category_ul > li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+  background-color: #ededed;
+  padding-left: 16px;
+}
+#categroy_title .category_ul > li ul {
+  display: none;
+}
+#categroy_title .category_ul > li ul li {
+  float: left;
+  width: 33.33%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#categroy_title .category_ul > li ul li a {
+  display: block;
+  color: #000;
+}
